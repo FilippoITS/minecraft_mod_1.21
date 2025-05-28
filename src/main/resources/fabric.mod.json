@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "provafinale",
+	"version": "${version}",
+	"name": "ProvaFinale",
+	"description": "CIAO",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/provafinale/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.provafinale.ProvaFinale"
+		],
+		"fabric-datagen": [
+			"com.provafinale.ProvaFinaleDataGenerator"
+		],
+		"client": [
+			"com.provafinale.ProvaFinaleClient"
+		]
+	},
+	"mixins": [
+		"provafinale.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
